@@ -148,11 +148,11 @@ function* generator () {
 let g = generator()
 //g.next().value 返回一个参数为callback函数
 g.next().value((err, data) => {
-  	if (err) g.throw(err)
-    g.next(data).value((err, data) => {
-      	if (err) g.throw(err)
-        g.next(data)
-  	})
+  if (err) g.throw(err)
+  g.next(data).value((err, data) => {
+    if (err) g.throw(err)
+    g.next(data)
+  })
 })
 ```
 
@@ -160,13 +160,13 @@ g.next().value((err, data) => {
 
 ```js
 function run (g) {
-  	let gen = g()
-  	function next(err, data) {
-      	let r = gen.next(data)
-        if (r.done) return
-        r.value(next)
-  	}
-  	next()
+  let gen = g()
+  function next(err, data) {
+    let r = gen.next(data)
+    if (r.done) return
+    r.value(next)
+  }
+  next()
 }
 run(generator)
 ```
@@ -189,7 +189,7 @@ let promiseMaker = function(path) {
 }
 
 function* generator () {
-  	let doc1 = yield promiseMaker('../node-thrift-test/client.js')
+    let doc1 = yield promiseMaker('../node-thrift-test/client.js')
     console.log(doc1.toString())
     let doc2 = yield promiseMaker('../node-thrift-test/server.js')
     console.log(doc2.toString())
