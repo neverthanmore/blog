@@ -11,7 +11,6 @@ nodejs属于异步编程模型，所以在实现业务的时候，需要掌握�
 
 ```js
 //co.wrap 将generator-function转换成普通的函数并且返回一个promise
-//问题： compose有什么作用？
 var fn = co.wrap(compose(this.middleware))
 if (!this.listeners('error').length) this.on('error', this.onerror);
 return function handleRequest(req, res){
@@ -216,9 +215,99 @@ promise和thunk原理差不多，都是能在异步函数执行完成之后通�
 The ultimate generator based flow-control goodness for nodejs (supports thunks, promises, etc)
 ```
 
-大意就是帮助generator控制流程，支持thunks和promise
+大意就是帮助generator控制流程，支持thunks和promise等。
+
+```js
+//co函数接收一个Generator函数
+function co(gen) {
+  var ctx = this;
+  var args = slice.call(arguments, 1);
+  //返回一个promise
+  return new Promise(function(resolve, reject){
+    // 判断gen函数，如果是function，执行函数传入args，获得generator对象
+    if(typeof gen === 'function') gen = gen.apply(this, args)
+    // gen对象如果不是generator执行生成的，直接把promise的状态改为resolved
+    if (!gen || typeof gen.next !== 'function') return resolve(gen);
+   	
+    //执行onFulfilled
+    onFulfilled();
+    //onFulfilled函数执行gen.next(res),通过trycatch捕获异常
+    function onFulfilled(res) {
+      var ret;
+      try {
+        ret = gen.next(res);
+      } catch (e) {
+        return reject(e);
+      }
+      next(ret);
+    }
+   	//捕获yield promise中reject状态
+    function onRejected(err) {
+      var ret;
+      try{
+        ret = gen.throw(err) 
+      }catch(e) {
+        return reject(e)
+      }
+      next(ret)
+    }
+    //next函数通过promise.then的onFulfilled函数实现重复调用
+    function next(ret){
+      //gen.next()执行完成把promise状态改为resolved
+      if(ret.done) return resolve(ret.value)
+      //把ret.value的值转换为promise,toPromise里定义了一些yield支持的格式
+      var value = toPromise.call(ctx, ret.value);
+      //转换为promise后，实现promise.then方法，onFulfilled实现generator重复执行
+      if (value && isPromise(value)) return value.then(onFulfilled, onRejected);
+      return onRejected(new TypeError('You may only yield a function, promise, generator, array, 		or object, '
+        + 'but the following object was passed: "' + String(ret.value) + '"'));
+    }
+  })
+}
+```
+
+toPromise方法:
+
+```js
+//支持promise、thunk、promise数组，对象value值为promise, generator
+function toPromise(obj) {
+  if (!obj) return obj;
+  if (isPromise(obj)) return obj;
+  if (isGeneratorFunction(obj) || isGenerator(obj)) return co.call(this, obj);
+  if ('function' == typeof obj) return thunkToPromise.call(this, obj);
+  if (Array.isArray(obj)) return arrayToPromise.call(this, obj);
+  if (isObject(obj)) return objectToPromise.call(this, obj);
+  return obj;
+}
+```
+
+在koa1.x中，组装中间件时，有一个写法`yield next`，而在原生中实现需要`yield* generator对象`, 这个是如何实现的呢？在toPromise方法中有一句：
+
+```js
+if (isGeneratorFunction(obj) || isGenerator(obj)) return co.call(this, obj);
+```
+
+判断是否是Generator函数或者是Generator对象，则递归调用，这就是koa1.x洋葱圈模型的实现。
+
+在最上面koa提了一个问题，koa如何catch异常？gen.next()异常，会调用reject(e)，这样promise的catch就能捕获错误啦。或者yield之后任何一个promise调用reject方法，会调用onRejected函数，onRejected函数有这么几句：
+
+```js
+try{
+  ret = gen.throw(err) 
+}catch(e) {
+  return reject(e)
+}
+```
+
+通过gen抛出错误，trycatch捕捉后，`return reject(e)`, 此时promise的catch就能捕获错误啦
 
 
+
+
+
+—— 2017-11-16
+
+——by gbbacy
 
 
 
