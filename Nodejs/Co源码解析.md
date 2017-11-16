@@ -33,7 +33,7 @@ Javascript-MDN上对generator的解释是：The Generator object is returned by 
 
 中文解释：Generator对象由一个生成器函数生成，它符合iterable协议和iterator协议。
 
-我们先来实现一个最基本的迭代器,
+我们先来实现一个最基本的迭代器：
 
 ```js
 function iteratorMaker(list) {
@@ -77,7 +77,7 @@ do{
 
 ```
 
-他实现的原理和上面自己封装的方法几乎一致。下面我们来看一下Generator是如何使用的，如下:
+他实现的原理和上面自己封装的方法几乎一致。熟悉了迭代器，下面我们来看一下Generator是如何使用的，如下:
 
 ```js
 function* gen(val) {
@@ -100,7 +100,7 @@ do{
 // { value: undefined, done: true }
 ```
 
-可以发现Generator函数也是拥有next()方法知道yield全部完成或者遇到return才会结束，所以上面的解释才会说，它符合iterator协议。
+可以发现Generator函数也是拥有next()方法，运行yield全部完成或者遇到return才会结束，所以上面的解释才会说，它符合iterator协议，当然它也是协程，可以控制函数的执行。
 
 ### 三、Generator函数的数据获取
 
@@ -149,9 +149,9 @@ let g = generator()
 //g.next().value 返回一个参数为callback函数
 g.next().value((err, data) => {
   	if (err) g.throw(err)
-  	g.next(data).value((err, data) => {
+    g.next(data).value((err, data) => {
       	if (err) g.throw(err)
-      	g.next(data)
+        g.next(data)
   	})
 })
 ```
