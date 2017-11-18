@@ -18,7 +18,7 @@ a.say.apply(b) //acy
 
 ### Function.prototype.apply
 
-`apply`方法的一种实现就是传入的第一个参数是一个对象，接着将fn定义在对昂里面，实现this的动态传入，所以可以通过如下代码简单实现：
+`apply`方法的一种实现就是传入的第一个参数是一个对象，接着将fn定义在对象里面，实现this的动态传入，所以可以通过如下代码简单实现：
 
 ```js
 Function.prototype.apply = function (t) {
@@ -98,5 +98,9 @@ Function.prototype.bind = function (othis) {
 }
 ```
 
-总体来说，this作用域属于基础，所以通过这两个方法的学习，能很好的掌握this的使用。
+总体来说，this属于Javascript基础，所以通过这两个方法的学习，能很好的掌握this的使用。
+
+—— 2017-11-19
+
+—— by gbbacy
 
