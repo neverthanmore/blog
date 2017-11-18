@@ -7,6 +7,8 @@
 五个方面包括(有些坑是先挖后填):
 
 1. CSS3
+   - [Flex布局学习]()
+   - [Grid布局学习]()
    - [如何使用will-change](https://github.com/neverthanmore/learning-edit/blob/master/README.md)
 
 2. H5
@@ -14,7 +16,7 @@
 
 3. JavaScript
 
-   - [Function.prototype.apply和Function.prototype.bind]()
+   - [Function.prototype.apply和Function.prototype.bind](https://github.com/neverthanmore/learning-edit/blob/master/Javascript/Function.prototype.apply%E5%92%8CFunction.prototype.bind.md)
 
 
    - [Vue源码学习(1)](https://github.com/neverthanmore/learning-edit/blob/master/Javascript/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0(1).md)
