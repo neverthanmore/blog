@@ -100,7 +100,3 @@ Function.prototype.bind = function (othis) {
 
 总体来说，this属于Javascript基础，所以通过这两个方法的学习，能很好的掌握this的使用。
 
-—— 2017-11-19
-
-—— by gbbacy
-
