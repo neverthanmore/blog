@@ -36,7 +36,7 @@ interface Document {
 }
 ```
 
-一般我们操作的`document`并不是上面所说的`Document`类，而是`HTMLDocument`接口生成，`HTMLDocument`集成于`Document`，主要重载了`EventTarget` 中的`addEventListener`方法，具体定义如下：
+一般我们操作的`document`并不是上面所说的`Document`类，而是`HTMLDocument`接口生成，`HTMLDocument`继承于`Document`，主要重载了`EventTarget` 中的`addEventListener`方法，具体定义如下：
 
 ```typescript
 interface HTMLDocument extends Document {

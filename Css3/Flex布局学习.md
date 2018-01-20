@@ -1,4 +1,4 @@
-### Flex 弹性盒子完整介绍(翻译)
+### Flex 弹性盒子完整指南(翻译)
 
 原文链接 [《A Complete Guide to Flexbox》](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
