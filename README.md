@@ -16,7 +16,6 @@
 
 
 2. H5
-   - [html语义化](https://github.com/neverthanmore/learning-edit/blob/master/H5/html%E8%AF%AD%E4%B9%89%E5%8C%96.md)
 
 3. JavaScript
 
@@ -27,19 +26,12 @@
 
 4. Nodejs
    - 2017-11-16 => [Co源码学习](https://github.com/neverthanmore/learning-edit/blob/master/Nodejs/Co%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
-   - [fast-json-stringify源码学习]()
 
 5. Web
 
    - [http协议学习]()
-   - [关于点透问题fastClick源码学习](https://github.com/neverthanmore/learning-edit/blob/master/Web/%E5%85%B3%E4%BA%8E%E7%82%B9%E9%80%8F%E9%97%AE%E9%A2%98fastClick%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
-
 
 6. Tools
 
-   - [webpack使用及优化]()
-
 7. 可视化
-
-   - [svg学习]()
 
