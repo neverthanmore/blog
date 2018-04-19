@@ -12,7 +12,7 @@
    - 2017-12-11 => [Dom元素操作](https://github.com/neverthanmore/learning-edit/blob/master/Css3/Dom%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C.md)
    - 2017-11-25 => [Flex布局学习](https://github.com/neverthanmore/learning-edit/blob/master/Css3/Flex%E5%B8%83%E5%B1%80%E5%AD%A6%E4%B9%A0.md)
    - 2018-01-20 => [Grid布局学习](https://github.com/neverthanmore/learning-edit/blob/master/Css3/Grid%E5%B8%83%E5%B1%80%E5%AD%A6%E4%B9%A0.md)
-   - 2017-11-17 => [如何使用will-change](https://github.com/neverthanmore/learning-edit/blob/master/README.md)
+   - 2017-11-17 => [如何使用will-change](https://github.com/neverthanmore/learning-edit/blob/master/Css3/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8will-change.md)
 
 
 2. H5
