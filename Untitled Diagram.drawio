@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-18T13:19:30.778Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.27 Safari/537.36 Edg/99.0.1150.16" etag="Hhzk0D9Ef3ZgTsWVtQJv" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-18T13:23:33.319Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.27 Safari/537.36 Edg/99.0.1150.16" etag="KGgSCBwyDbxbb2-qMG9P" version="16.6.1" type="github">
   <diagram id="kxvEDPP3dTnZatnSr2Ny" name="第 1 页">
     <mxGraphModel dx="946" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,7 +131,7 @@
           <mxGeometry x="20" y="480" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-58" value="Page" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=11;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="286" y="440" width="74" height="90" as="geometry" />
+          <mxGeometry x="310" y="360" width="74" height="90" as="geometry" />
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-61" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;strokeColor=none;fillColor=#ffe6cc;" vertex="1" parent="1">
           <mxGeometry x="100" y="340" width="120" height="140" as="geometry" />
@@ -149,10 +149,13 @@
           <mxGeometry x="110" y="440" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-67" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;strokeColor=none;fillColor=#ffe6cc;" vertex="1" parent="1">
-          <mxGeometry x="100" y="500" width="120" height="140" as="geometry" />
+          <mxGeometry x="100" y="500" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-68" value="二三方策略" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="500" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-69" value="任务配置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="110" y="530" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
