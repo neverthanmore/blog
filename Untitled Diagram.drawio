@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-18T13:34:34.998Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.27 Safari/537.36 Edg/99.0.1150.16" etag="C4cK8MyG3EXz9Eb5nSsv" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-18T13:38:09.316Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.27 Safari/537.36 Edg/99.0.1150.16" etag="dMNgaWAZwGtAnM53c8vJ" version="16.6.1" type="github">
   <diagram id="kxvEDPP3dTnZatnSr2Ny" name="第 1 页">
     <mxGraphModel dx="946" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -106,7 +106,7 @@
         <mxCell id="E2rxo5asx0tLAi9UUo67-43" value="策略流" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
           <mxGeometry x="520" y="220" width="76" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="E2rxo5asx0tLAi9UUo67-44" value="只能承接" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+        <mxCell id="E2rxo5asx0tLAi9UUo67-44" value="智能承接" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
           <mxGeometry x="535" y="260" width="131" height="30" as="geometry" />
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-45" value="新老客" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
@@ -215,6 +215,39 @@
         </mxCell>
         <mxCell id="E2rxo5asx0tLAi9UUo67-88" value="&lt;span style=&quot;font-size: 14px&quot;&gt;高乐高&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="528" y="690" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-89" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;strokeColor=none;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="672" y="340" width="120" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-90" value="App海关" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="697" y="340" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-91" value="唤端协议" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-92" value="流量分发" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="404" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-93" value="实时上报" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="440" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-94" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;strokeColor=none;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="672" y="540" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-95" value="唤端能力" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="697" y="540" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-96" value="拉承配置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="570" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-97" value="唤端策略" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="604" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-98" value="运营工具" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="640" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E2rxo5asx0tLAi9UUo67-99" value="性能统计" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="682" y="476" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
